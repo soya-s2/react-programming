@@ -5,16 +5,17 @@ function App() {
   const name = '리액트';
   return (
     <>
-      <div className="react">{name}</div>
-      <input /> 
+      {/* 주석은 이렇게 작성합니다. */}
+      <div
+        className="react" // 시작 태그를 여러 줄로 작성하면 여기에 주석이 작성 가능하다.
+      >
+        {name}
+      </div>
+      // 하지만 이런 주석이나
+      /* 이런 주석은 페이지에 그대로 나타나게 된다. */
+      <input />
     </>
   );
 }
 
 export default App;
-
-/* 
-line 9의 <input />과 같은 것을 self-closing tag라고 하며,
-태그를 선언하면서 동시에 닫을 수 있다.
-또한 JSX 문법에서는 input, br 등을 꼭 닫아야 한다.
-*/
