@@ -26,3 +26,13 @@ const Say = () => {
 };
 
 export default Say;
+
+/* <h1 style={{ color }} 에서의 { color }는
+{ color: color }, { color: 'red' }와 같다.
+ES6에서의 단축 프로퍼티이며, { color }로 쓸 시   
+키를 변수명으로 자동 생성해준다. 
+
+위의 코드에서는 setColor('red')로
+color = 'red'가 되고,
+{ color }로 스타일을 지정했으므로
+{ color: color('red') }가 되는 것이다. */
