@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import IterationSample from './IterationSample';
+import Counter from './Counter';
 
 class App extends Component {
   render() {
     return (
-      <IterationSample></IterationSample>
+      <Counter></Counter>
     );
   }
 }
