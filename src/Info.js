@@ -1,4 +1,7 @@
-import React, { useReducer } from 'react';
+import React from 'react';
+import useInputs from './useInputs';
+
+/* 이 부분을 useInputs.js로 분리 1
 
 function reducer(state, action) {
   return {
@@ -6,17 +9,22 @@ function reducer(state, action) {
     [action.name]: action.value,
   };
 }
+*/
 
 const Info = () => {
-  const [state, dispatch] = useReducer(reducer, {
+  const [state, onChange] = useInputs({
     name: '',
     nickname: '',
   });
 
   const { name, nickname } = state;
+
+  /* 이 부분을 useInputs.js로 분리 2
+
   const onChange = (e) => {
     dispatch(e.target);
   };
+  */
 
   return (
     <div>
