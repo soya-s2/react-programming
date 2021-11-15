@@ -1,8 +1,8 @@
 import React from 'react';
-import Info from './Info';
+import SassComponent from './SassComponent';
 
 const App = () => {
-  return <Info />;
+  return <SassComponent />;
 };
 
 export default App;
